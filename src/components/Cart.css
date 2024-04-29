@@ -1,0 +1,145 @@
+/* mainTop */
+.mainTop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 2px 10px;
+    width: 450px;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    border-radius: 12px;
+    background-color: cornflowerblue;
+}
+
+.btn:hover {
+    background-color: white;
+    color: cornflowerblue;
+}
+
+/* main  */
+
+.characterList {
+    width: 100vw;
+    /* margin: 8px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    margin: 5px;
+    width: 21%;
+    height: 810px;
+    border-radius: 13px;
+    border: 1px solid black;
+}
+
+.nameBox {
+    text-align: center;
+    padding-top: 7px;
+    font-size: 20px;
+    height: 40px;
+    background-color: cornflowerblue;
+    border-radius: 13px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.photoBox {
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black;    */
+}
+
+.photoBox img {
+    border-radius: 12px;
+}
+
+.photoBox img:hover {
+    box-shadow: 2px 4px 5px black;
+}
+
+tr {
+    width: 100%;
+}
+
+td {
+    width: 50%;
+}
+
+table tr td {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+table tr td:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+/* responsive  */
+@media (min-width : 1361px) and (max-width : 1440px) {
+    .box {
+        height: 835px;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .mainTop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header {
+        height: 150px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 48%;
+        height: auto;
+        padding-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .mainTop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 48%;
+        height: auto;
+        padding-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mainTop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 80%;
+        height: auto;
+        padding-bottom: 5px;
+    }
+}
+
+@media (min-width : 320px) and (max-width : 425px) {
+    .characterList {
+        width: 100%;
+    }
+}

@@ -1,0 +1,213 @@
+/* header  */
+
+.header {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: cornflowerblue;
+    position: sticky;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.searchBox {
+    width: 750px;
+    height: 55px;
+    display: flex;
+    position: relative;
+}
+
+.searchBox #searchBar {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 12px;
+    padding-left: 12px;
+    border: 1px solid gray;
+}
+
+.searchBox #searchBTN {
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    left: 80%;
+    border-radius: 12px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.searchBox #searchBTN:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.headerName {
+    color: white;
+    padding: 8px;
+    text-transform: capitalize;
+}
+
+.headerName a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.headerName a:hover {
+    background-color: white;
+    color: cornflowerblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* mainTop */
+.mainTop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.btn {
+    margin: 2px 10px;
+    width: 450px;
+    height: 50px;
+    font-size: 21px;
+    color: white;
+    border-radius: 12px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+.btn:hover {
+    background-color: white;
+    color: cornflowerblue;
+    box-shadow: 1px 1px 1px black;
+}
+
+@media (min-width : 320px) and (max-width : 425px) {
+    .header {
+        width: 100%;
+        margin-bottom : 59px;
+    }
+
+    .headerName {
+        margin-top: 20px;
+    }
+
+    .headerName a {
+        font-size: 25px;
+    }
+
+    .searchBox {
+        width: 95%;
+        margin-top: 23px;
+    }
+
+    .searchBox #searchBar {
+        font-size: 20px;
+    }
+
+    .searchBox #searchBTN {
+        left: 81%;
+        font-size: 16px;
+        width: 75px;
+    }
+
+    .howardBtn .btn {
+        width: 380px;
+    }
+}
+
+@media (min-width : 426px) and (max-width : 768px) {
+    .header {
+        width: 100%;
+        margin-bottom : 58px;
+    }
+
+    .headerName {
+        margin-top: 20px;
+    }
+
+    .headerName a {
+        font-size: 25px;
+    }
+
+    .searchBox {
+        width: 75%;
+        margin-top: 23px;
+    }
+
+    .searchBox #searchBar {
+        font-size: 20px;
+    }
+
+    .searchBox #searchBTN {
+        left: 87%;
+        font-size: 16px;
+        width: 75px;
+    }
+
+    .howardBtn .btn {
+        width: 580px;
+    }
+}
+
+@media (min-width : 769px) and (max-width : 1024px) {
+    .header {
+        width: 100%;
+        margin-bottom: 59px;
+    }
+
+    .headerName {
+        margin-top: 25px;
+    }
+
+    .headerName a {
+        font-size: 25px;
+    }
+
+    .searchBox {
+        width: 66%;
+        margin-top: 19px;
+    }
+
+    .searchBox #searchBar {
+        font-size: 20px;
+    }
+
+    .searchBox #searchBTN {
+        left: 89%;
+        font-size: 16px;
+        width: 75px;
+    }
+
+    .howardBtn .btn {
+        width: 680px;
+    }
+}
+
+@media (min-width : 1025px) and (max-width : 1224px) {
+    .header {
+        margin-bottom: 67pxh
+    }
+
+    .searchBox {
+        width: 66%;
+        margin-top: 19px;
+    }
+
+    .searchBox #searchBTN {
+        left: 89%;
+        font-size: 16px;
+        width: 75px;
+    }
+
+    .howardBtn .btn {
+        width: 680px;
+    }
+}
